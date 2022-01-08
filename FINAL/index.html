@@ -1,0 +1,63 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <title>Color Navigation</title>  
+
+  <link rel="stylesheet" href="reset.css">  
+  <link rel="stylesheet" href="style.css">  
+  </head>  
+<body>   
+
+ <nav class="navMain">
+        <div class="btnToggleNav" onmouseover="toggleNav()">
+        </div>
+    <header>
+        <div id="header">
+            <h2>CHANGE THE BACKGROUND COLOR</h2>
+        </div>
+
+    </header>
+
+    </nav>
+   
+    <aside id="toggle" class="navSidebar">
+        <ul>
+            <li><span for="toggle">BACKGROUND COLOR</span></li>
+
+            <li><a href="#" onclick="red()" id="redNav">   
+            <label for="red">RED
+            </label>
+        </a></li>
+
+            <li><a href="#" onclick="green()" id="greenNav">             
+            <label for="green">GREEN
+             </label>
+            </a></li>
+
+            <li><a href="#" onclick="blue()" id="blueNav">
+            <label for="blue">BLUE
+             </label>
+            </a></li>
+
+            <li><a href="#" onclick="yellow()" id="yellowNav">
+            <label for="yellow">YELLOW
+           </label>
+            </a></li>
+
+            <li><a href="#" onclick="orange()" id="orangeNav">
+            <label for="orange">ORANGE
+             </label>
+            </a></li>
+          
+        </ul>
+
+    </aside>
+    <div id="container"><p id="color">CHOOSE COLOR</p>
+    </div>
+<script defer src="script.js"></script>  
+
+</body>  
+</html>  

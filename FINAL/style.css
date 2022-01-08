@@ -1,0 +1,146 @@
+body {
+    background-color: #F1F1F1; 
+}
+
+.navMain {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+}
+
+#redNav {
+    background-color: red;
+}
+
+#greenNav{
+    background-color: green;
+}
+
+#blueNav {
+    background-color: blue;
+}
+
+#yellowNav {
+    background-color: yellow;
+}
+
+#orangeNav {
+    background-color: #ff9500;
+}
+
+.btnToggleNav {
+    width: 60px;
+    height: 100%;
+    background-color: #FF9500;
+    background-image: url("img/burger.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    cursor: pointer;
+}
+
+.btnToggleNav:hover {
+    opacity: 0.6;
+}
+
+.navMain ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navMain ul li {
+    list-style: none;
+    line-height: 60px;  
+}
+
+.navMain ul li a {
+    display: block;
+    height: 100%;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #111;
+    font-family: arial;
+    font-size: 16px;
+    padding-left: 25px;
+}
+
+.navMain ul li a:hover {
+    display: block;
+    height: 100%;
+    padding: 0 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FF9500;
+    font-family: arial;
+    font-size: 16px;
+    transition: 0.1s ease-in-out;
+    background-color: #ddd;
+    padding-left: 25px;
+    padding-right: 25px;  
+}
+
+.navSidebar {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 60px;
+    padding: 0 0px;
+    height: calc(100vh - 60px);
+    background-color: #1b1b1b;
+    z-index: 1000;
+    transition: 0.3s ease-in-out;
+}
+
+.navSidebar ul {
+    padding-top: 15px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.navSidebar ul li {
+    line-height: 60px;
+    list-style: none;
+}
+
+.navSidebar ul li span, .navSidebar ul li a {
+    display: block;
+    height: 60px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: Arial;
+    font-size: 16px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.navSidebar ul li a:hover {
+     background-color: "#222"
+}
+
+#container {
+    margin:60px 100px;
+    padding: 150px 200px;
+    color:#1b1b1b;
+    font-family: arial;
+    font-size: 60px;
+}
+
+li:hover{
+    opacity: 0.7;
+    transition: 0.6s;
+}
+
+#header {
+    padding: 16px 35px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
